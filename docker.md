@@ -34,9 +34,13 @@
   + `docker build -t ubuntu:kelvintest .`
 - `docker history`
   + `docker history ubuntu:kelvintest`
-
+- `docker network`
+  + `docker network create --attachable kelvinnet`
+  + Example: `docker network connect kelvinnet db`
+  
 ## Links
 - https://itnext.io/chroot-cgroups-and-namespaces-an-overview-37124d995e3d
 - https://docs.docker.com/storage/
 - https://github.com/wagoodman/dive
+- https://docs.docker.com/compose/startup-order/
 
