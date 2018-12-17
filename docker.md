@@ -14,6 +14,7 @@
   + `-f`
   + Example: `docker rm $(docker ps -aq)`
 - `docker run IMAGE`
+  + `-rm`, automatically remove the container when it exits
   + `-d`, run container un background
   + `-it`, run interactive shell
   + `--mount src=dbdata,dst=/data/db`, attach a filesystem mount to the container
@@ -31,7 +32,11 @@
   + `docker tag ubuntu:kelvintest kelvinlemus/ubuntu:kelvintest`
 - `docker build`
   + `docker build -t ubuntu:kelvintest .`
-  
+- `docker history`
+  + `docker history ubuntu:kelvintest`
+
 ## Links
 - https://itnext.io/chroot-cgroups-and-namespaces-an-overview-37124d995e3d
 - https://docs.docker.com/storage/
+- https://github.com/wagoodman/dive
+
